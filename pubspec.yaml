@@ -1,0 +1,16 @@
+name: front_dart_polymer
+version: 0.0.1
+description: A simple example of a full polymer app with multiple pages.
+environment:
+  sdk: '>=1.9.0-dev.7.1 <2.0.0'
+dependencies:
+  core_elements: ^0.6.1
+  dart_config: any
+  paper_elements: ^0.6.2
+  polymer: any
+  route_hierarchical: ^0.6.0
+transformers:
+- polymer:
+    entry_points: web/index.html
+- $dart2js:
+    $include: '**/*.polymer.bootstrap.dart'
