@@ -1,0 +1,12 @@
+<link rel="import" href="../../../packages/core_elements/core_splitter.html">
+<polymer-element name="cv-view">
+  <template>
+    <div  horizontal layout style="width:100%; height:100%;">
+      <div>esto de la derecha...</div>
+        <core-splitter direction="left"></core-splitter>
+      <div flex>
+        <paper-button>{{ data['hello'] }}</paper-button>
+    </div>
+  </template>
+  
+</polymer-element>
